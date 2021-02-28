@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map_wrap{
+    width: 400px;
+    height: 400px;
+    background-color: greenyellow;
+    margin-top: 100px;
+    border: 10px solid #999;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.map_wrap .map{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+}
+.map_wrap .tool_panel{
+    width: 300px;
+    height: 40px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+
+/*snake*/
+
+.map #snake{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%,-50%);
+}
+
+.map #snake >div{
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border: 1px solid greenyellow;
+}
+
+.map #food{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 100px;
+    top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    
+}
+
+.map #food >div{
+    width: 4px;
+    height: 4px;
+    background-color: #000;
+    transform: rotate(45deg);
+}
